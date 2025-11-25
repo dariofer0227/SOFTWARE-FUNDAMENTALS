@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="EJERCICIO DE BUCLES 2 -CON FUNCIONn"/>
+        <attribute name="authors" value="Dario FhEr"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-21 11:45:11 p.&#160;m."/>
+        <attribute name="created" value="RGFyaW8gRmhFcjtERVNLVE9QLU1CSVRDSkk7MjAyNS0xMS0yMTswODoxMTowNCBwLsKgbS47MzU2OQ=="/>
+        <attribute name="edited" value="RGFyaW8gRmhFcjtERVNLVE9QLU1CSVRDSkk7MjAyNS0xMS0yMTsxMTo0NToxMSBwLsKgbS47MjszNjc3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="countPares" type="Integer" array="False" size=""/>
+            <declare name="countImpares" type="Integer" array="False" size=""/>
+            <declare name="acumTotal" type="Integer" array="False" size=""/>
+            <declare name="randomNum" type="Integer" array="False" size=""/>
+            <assign variable="countPares" expression="0"/>
+            <assign variable="countImpares" expression="0"/>
+            <assign variable="acumTotal" expression="0"/>
+            <assign variable="i" expression="1"/>
+            <output expression="&quot;cuantos numeros aleatorios desea generar&quot;" newline="True"/>
+            <input variable="n"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <assign variable="randomNum" expression="random (100)"/>
+                <output expression="RandomNum" newline="True"/>
+                <if expression="randomNum %2=0">
+                    <then>
+                        <assign variable="countpares" expression="countPares+1"/>
+                    </then>
+                    <else>
+                        <assign variable="countImpares" expression="countImpares+1"/>
+                    </else>
+                </if>
+                <assign variable="acumTotal" expression="acumTotal+randomNum"/>
+            </for>
+            <output expression="&quot;*****REPORTE FINAL*****&quot;" newline="True"/>
+            <output expression="&quot;TOTAL DE PARES GENERADOS &quot;&amp; countPares" newline="True"/>
+            <output expression="&quot;TOTAL DE IMPARES GENERADOS &quot;&amp; countImpares" newline="True"/>
+            <output expression="&quot;La suma de los numeros generados es: &quot;&amp; acumTotal+randomNum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
