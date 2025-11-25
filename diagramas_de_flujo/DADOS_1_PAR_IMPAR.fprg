@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="CHANGE1"/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-14 09:54:02 a.&#160;m."/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtNEtBUkRKUTQ7MjAyNS0xMS0xNDswOToyNzo1MiBhLsKgbS47Mjk2MA=="/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtNEtBUkRKUTQ7MjAyNS0xMS0xNDswOTo1NDowMiBhLsKgbS47MTszMDYz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="dado" type="Integer" array="False" size=""/>
+            <assign variable="dado" expression="Random(6) + 1"/>
+            <output expression="&quot;DADO&quot;" newline="True"/>
+            <output expression="dado" newline="True"/>
+            <if expression="dado % 2 = 0">
+                <then>
+                    <output expression="&quot;el n&#250;mero es Par&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;El n&#250;mero es impar&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
