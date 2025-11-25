@@ -6,9 +6,9 @@
 
 Algoritmo basic_calc
 	//1. Define vars and/or const
-	Definir num1, num2 Como real
-	Definir add, subs, mult Como real
-	Definir div Como Real
+	Definir num1, num2 Como real;
+	Definir add, subs, mult Como real;
+	Definir div Como Real;
 	//2. Initialize vars and/or const
 	//Inputs
 	num1 <- 10.5;
