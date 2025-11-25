@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="EJERCICIO DE BUCLES"/>
+        <attribute name="authors" value="Dario FhEr"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-21 08:07:34 p.&#160;m."/>
+        <attribute name="created" value="RGFyaW8gRmhFcjtERVNLVE9QLU1CSVRDSkk7MjAyNS0xMS0yMDswNzo0NTo1NCBwLsKgbS47MzU3OQ=="/>
+        <attribute name="edited" value="RGFyaW8gRmhFcjtERVNLVE9QLU1CSVRDSkk7MjAyNS0xMS0yMTswODowNzozNCBwLsKgbS47MjszNjg2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="1"/>
+            <output expression="&quot;Por favor ingrese un numero (&gt;0 y &lt;= 100)&quot;" newline="True"/>
+            <input variable="x"/>
+            <for variable="i" start="1" end="x" direction="inc" step="1">
+                <output expression="i" newline="True"/>
+            </for>
+            <output expression="&quot;Ultima interaccion que rompio el bucle &quot; &amp;i" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
